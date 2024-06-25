@@ -1,4 +1,5 @@
 import React from 'react'
+import Tooltip from '@mui/material/Tooltip'
 
 // Mostre os dados da aplicação, como aprensetado no vídeo
 // Não utilize CSS externo, use o style para mudar as cores
@@ -44,6 +45,9 @@ const App = () => {
     </p>
     <p>Total: R$ {total}</p>
     {total > 10000 && <p>Você está gastando muito</p>}
+    <Tooltip title='cliente' arrow>
+      <button>Marcia</button>
+    </Tooltip>
   </div>
 )
 };
