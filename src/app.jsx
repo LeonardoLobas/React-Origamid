@@ -1,7 +1,43 @@
 import React from 'react'
 
-const App = () =>  {
-  return <div>App React</div>
-}
+const App = () => {
+  function meuNome() {
+    return 'André';
+  }
+
+  function quadrado(x) {
+    return x * x;
+  }
+
+  const carro = {
+    rodas: 4,
+    marca: 'Ford',
+  };
+
+  const titulo = {
+    fontSize : 40,
+    color : 'blue'
+  }
+
+  return (
+    <div>
+      <h1 style={titulo}>{'MINHA EMPRESA'.toLowerCase()}</h1>
+      <p>{30 * 2}</p>
+      <p>{true}</p>
+      <p>{undefined}</p>
+      <p>{(() => 'Função Executada')()}</p>
+      <p>{meuNome()}</p>
+      <p>{quadrado(2)}</p>
+      <p>{quadrado(6) === 4 ? 'Fórmula correta' : 'Fórmula incorreta'}</p>
+      <p>{quadrado(2) === 4 && 'Fórmula correta'}</p>
+      <p>{Date.now()}</p>
+      <p>{new Date().getFullYear()}</p>
+      <p>
+        Marca: {carro.marca}, Rodas: {carro.rodas}
+      </p>
+    </div>
+  );
+};
+
 
 export default App
