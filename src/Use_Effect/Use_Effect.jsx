@@ -1,7 +1,7 @@
 import React from "react";
 
 const Use_Effect = () => {
-    return <div></div>;
+    return <div>sadasdasdasdasd</div>;
 };
 
 export default Use_Effect;
