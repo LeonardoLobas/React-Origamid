@@ -1,6 +1,6 @@
 import React from "react";
 import Titulo from "./titulo";
-import Produto from "./produto";
+import Produto from "./produtoApp";
 
 const Produtos = () => {
     const produtos = [
