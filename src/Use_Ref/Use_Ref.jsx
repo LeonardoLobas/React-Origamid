@@ -3,31 +3,26 @@ import React from "react";
 // Use_ref exercicios. testes
 
 const Use_Ref = () => {
-    const [comentarios, setComentarios] = React.useState([]);
-    const [input, setInput] = React.useState("");
-    const inputElement = React.useRef();
+    const [carrinho, setCarrinho] = React.useState(0);
+    const [notificacao, setnotificacao] = React.useState(null);
+    const timeoutRef = React.useRef();
 
     function handleClick() {
-        setComentarios((comentarios) => [...comentarios, input]);
-        setInput("");
-        inputElement.current.focus();
+        setCarrinho(carrinho + 1);
+        setnotificacao("Item adicionado ao carrinho");
+
+        clearTimeout(timeoutRef.current);
+        timeoutRef.current = setTimeout(() => {
+            setnotificacao(null);
+        }, 2000);
     }
 
     return (
         <div>
-            <ul>
-                {comentarios.map((comentario) => (
-                    <li key={comentario}>{comentario}</li>
-                ))}
-            </ul>
-            <input
-                type="text"
-                value={input}
-                ref={inputElement}
-                onChange={({ target }) => setInput(target.value)}
-            />
-            <br />
-            <button onClick={handleClick}>Enviar</button>
+            <h3>{notificacao}</h3>
+            <button onClick={handleClick}>
+                Adicionar Carrinho {carrinho}{" "}
+            </button>
         </div>
     );
 };
