@@ -24,9 +24,3 @@ export const GlobalStorage = ({ children }) => {
         </Global_Context.Provider>
     );
 };
-
-export const useGlobalStorage = () => {
-    const context = React.useContext(Global_Context);
-    if (!context) return;
-    return context;
-};
