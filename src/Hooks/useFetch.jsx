@@ -1,18 +1,30 @@
 import React from "react";
 
 const useFetch = () => {
-    const [dados, setDados] = React.useState(null);
+    const [data, setData] = React.useState(null);
     const [error, setError] = React.useState(null);
     const [loading, setLoading] = React.useState(null);
 
-    async function request(url, options) {
-        setLoading(true);
-        const response = await fetch(url, options);
-        const json = await response.json();
-        setDados(json);
-        setLoading(false);
-    }
-    return { dados, error, loading, request };
+    const request = React.useCallback(async (url, options) => {
+        let response;
+        let json;
+        try {
+            setError(null);
+            setLoading(true);
+            response = await fetch(url, options);
+            json = await response.json();
+            if (response.ok === false) throw new Error(json.message);
+        } catch (err) {
+            json = null;
+            setError(err.message);
+        } finally {
+            setData(json);
+            setLoading(false);
+            return { response, json };
+        }
+    }, []);
+
+    return { data, loading, error, request };
 };
 
 export default useFetch;

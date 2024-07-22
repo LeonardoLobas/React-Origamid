@@ -1,36 +1,24 @@
 import React from "react";
-import useLocalStorage from "./useLocalStorage";
 import useFetch from "./useFetch";
 
 const Hooks_context = () => {
-    const [produto, setProduto] = useLocalStorage("produto", "");
-    const { request, dados, loading } = useFetch();
+    const { data, loading, error, request } = useFetch();
 
     React.useEffect(() => {
         request("https://ranekapi.origamid.dev/json/api/produto/");
-    }, []);
+    }, [request]);
 
-    function handleClick({ target }) {
-        setProduto(target.innerText);
-    }
-
+    if (error) return <p>{error}</p>;
     if (loading) return <p>Carregando...</p>;
-
-    if (dados)
+    if (data)
         return (
             <div>
-                <h3>Item escolhido: {produto} </h3>
-                <button onClick={handleClick}>Notebook</button>
-                <button onClick={handleClick}>Celular</button>
-
-                {dados.map((produto) => (
-                    <div key={produto.id}>
-                        <h1>{produto.nome}</h1>
-                    </div>
+                {data.map((produto) => (
+                    <p key={produto.id}>{produto.nome}</p>
                 ))}
             </div>
         );
-    else null;
+    else return null;
 };
 
 export default Hooks_context;
