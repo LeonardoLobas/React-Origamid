@@ -1,8 +1,12 @@
 import React from "react";
 const Input = () => {
     const [nome, setNome] = React.useState(" ");
+    function handleSubmit(event) {
+        event.preventDefault();
+        console.log(event);
+    }
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <label htmlFor="nome">Nome</label>
             <input
                 type="text"
@@ -10,6 +14,7 @@ const Input = () => {
                 value={nome}
                 onChange={(event) => setNome(event.target.value)}
             />
+            <button>Enviar</button>
             <p>{nome}</p>
         </form>
     );
