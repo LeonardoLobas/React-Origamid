@@ -9,6 +9,8 @@ import Use_Memo from "./Use_memo/use_callback/use_memo.jsx";
 import Use_Context from "./Use_Context/use_Context.jsx";
 import Hooks_context from "./Hooks/Hooks.jsx";
 import Input from "./Input/input.jsx";
+import Textarea from "./Textarea/textarea.jsx";
+import Select from "./Select/select.jsx";
 
 // ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Hooks />);
@@ -18,4 +20,6 @@ import Input from "./Input/input.jsx";
 // ReactDOM.createRoot(document.getElementById("root")).render(<Use_Memo />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Use_Context />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Hooks_context />);
-ReactDOM.createRoot(document.getElementById("root")).render(<Input />);
+// ReactDOM.createRoot(document.getElementById("root")).render(<Input />);
+// ReactDOM.createRoot(document.getElementById("root")).render(<Textarea />);
+ReactDOM.createRoot(document.getElementById("root")).render(<Select />);
