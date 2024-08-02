@@ -11,6 +11,7 @@ import Hooks_context from "./Hooks/Hooks.jsx";
 import Input from "./Input/input.jsx";
 import Textarea from "./Textarea/textarea.jsx";
 import Select from "./Select/select.jsx";
+import Radio from "./Radio/radio.jsx";
 
 // ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Hooks />);
@@ -22,4 +23,5 @@ import Select from "./Select/select.jsx";
 // ReactDOM.createRoot(document.getElementById("root")).render(<Hooks_context />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Input />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Textarea />);
-ReactDOM.createRoot(document.getElementById("root")).render(<Select />);
+// ReactDOM.createRoot(document.getElementById("root")).render(<Select />);
+ReactDOM.createRoot(document.getElementById("root")).render(<Radio />);
