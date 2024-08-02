@@ -8,12 +8,13 @@ const Select = () => {
                 value={select}
                 onChange={({ target }) => setSelect(target.value)}
             >
+                <option disabled value=""></option>
                 <option value="notebook">Notebook</option>
                 <option value="smartphone">Smartphone</option>
                 <option value="trablet">Tablet</option>
             </select>
+            {select}
         </form>
     );
 };
-//estudar mais
 export default Select;
