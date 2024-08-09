@@ -25,7 +25,7 @@ const Checkbox = () => {
     return (
         <form>
             {coresArray.map((cor) => (
-                <label key={cor}>
+                <label key={cor} style={{ textTransform: "capitalize" }}>
                     <input
                         type="checkbox"
                         value={cor}
