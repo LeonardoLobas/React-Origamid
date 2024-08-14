@@ -25,5 +25,5 @@ import Checkbox from "./CheckBox/Checkbox.jsx";
 // ReactDOM.createRoot(document.getElementById("root")).render(<Input />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Textarea />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Select />);
-ReactDOM.createRoot(document.getElementById("root")).render(<Radio />);
-// ReactDOM.createRoot(document.getElementById("root")).render(<Checkbox />);
+// ReactDOM.createRoot(document.getElementById("root")).render(<Radio />);
+ReactDOM.createRoot(document.getElementById("root")).render(<Checkbox />);
