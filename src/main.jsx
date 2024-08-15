@@ -13,6 +13,7 @@ import Textarea from "./Textarea/textarea.jsx";
 import Select from "./Select/select.jsx";
 import Radio from "./Radio/radio.jsx";
 import Checkbox from "./CheckBox/Checkbox.jsx";
+import ValidApp from "./Validação/ValidApp.jsx";
 
 // ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Hooks />);
@@ -26,4 +27,5 @@ import Checkbox from "./CheckBox/Checkbox.jsx";
 // ReactDOM.createRoot(document.getElementById("root")).render(<Textarea />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Select />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Radio />);
-ReactDOM.createRoot(document.getElementById("root")).render(<Checkbox />);
+// ReactDOM.createRoot(document.getElementById("root")).render(<Checkbox />);
+ReactDOM.createRoot(document.getElementById("root")).render(<ValidApp />);
