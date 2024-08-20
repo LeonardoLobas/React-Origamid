@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./Aplicativo_projeto/App.jsx";
+// import App from "./Aplicativo_projeto/App.jsx";
 import Hooks from "./Use_state/hooks.jsx";
 import UseState_Exe from "./Use_state/UseState_Exe.jsx";
 import Use_Effect from "./Use_Effect/Use_Effect.jsx";
@@ -14,6 +14,7 @@ import Select from "./Select/select.jsx";
 import Radio from "./Radio/radio.jsx";
 import Checkbox from "./CheckBox/Checkbox.jsx";
 import ValidApp from "./Validação/ValidApp.jsx";
+import App from "./useForm/app.jsx";
 
 // ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Hooks />);
@@ -28,4 +29,5 @@ import ValidApp from "./Validação/ValidApp.jsx";
 // ReactDOM.createRoot(document.getElementById("root")).render(<Select />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Radio />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Checkbox />);
-ReactDOM.createRoot(document.getElementById("root")).render(<ValidApp />);
+// ReactDOM.createRoot(document.getElementById("root")).render(<ValidApp />);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
