@@ -14,7 +14,9 @@ import Select from "./Select/select.jsx";
 import Radio from "./Radio/radio.jsx";
 import Checkbox from "./CheckBox/Checkbox.jsx";
 import ValidApp from "./Validação/ValidApp.jsx";
-import App from "./useForm/app.jsx";
+// import App from "./useForm/app.jsx";
+import Apps from "./PerguntasExe/Apps.jsx";
+import Principal from "./css/Principal.jsx";
 
 // ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Hooks />);
@@ -30,4 +32,6 @@ import App from "./useForm/app.jsx";
 // ReactDOM.createRoot(document.getElementById("root")).render(<Radio />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<Checkbox />);
 // ReactDOM.createRoot(document.getElementById("root")).render(<ValidApp />);
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+// ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+// ReactDOM.createRoot(document.getElementById("root")).render(<Apps />);
+ReactDOM.createRoot(document.getElementById("root")).render(<Principal />);
