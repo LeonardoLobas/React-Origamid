@@ -1,11 +1,23 @@
 import React from "react";
-import styles from "./App.module.css";
+import Slide from "./slide";
 const Principal = () => {
+    const slides = [
+        {
+            id: "slide1",
+            text: "Slide1",
+        },
+        {
+            id: "slide2",
+            text: "Slide2",
+        },
+        {
+            id: "slide3",
+            text: "Slide3",
+        },
+    ];
     return (
         <div>
-            <h1 className={styles.titulo}>Notebook</h1>
-            <p className={styles.preco}>R$ 12000</p>
-            <button className={styles.comprar}>Comprar</button>
+            <Slide slides={slides} />
         </div>
     );
 };
