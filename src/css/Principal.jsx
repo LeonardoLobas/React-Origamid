@@ -1,5 +1,6 @@
 import React from "react";
 import Slide from "./slide";
+// import "./App.css";
 const Principal = () => {
     const slides = [
         {
